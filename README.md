@@ -1,2 +1,4 @@
-# mshoxxdb
-mshoxxDB - dataset for electronic music
+# mshoxxDB
+mshoxxDB - a Versioned Dataset for Electronic Music
+
+(link to downloadable files coming soon)
