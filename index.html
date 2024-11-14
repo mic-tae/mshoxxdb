@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>mshoxxDB Demo Page</title>
+    <script src="https://unpkg.com/wavesurfer.js"></script>  <!-- CDN links -->
+    <script src="https://unpkg.com/wavesurfer.js@latest/dist/plugin/wavesurfer.spectrogram.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script>
+        const options = {
+          height: 50,           /** The height of the waveform in pixels */
+          splitChannels: false,           /** Render each audio channel as a separate waveform */
+          normalize: true,           /** Stretch the waveform to the full height */
+          waveColor: '#ff4e00',           /** The color of the waveform */
+          progressColor: '#dd5e98',           /** The color of the progress mask */
+          cursorColor: '#ddd5e9',           /** The color of the playpack cursor */
+          cursorWidth: 2,           /** The cursor width */
+          minPxPerSec: 1,           /** Minimum pixels per second of audio (i.e. zoom level) */
+          fillParent: true,           /** Stretch the waveform to fill the container, true by default */
+          mediaControls: true,           /** Whether to show default audio element controls */
+          autoplay: false,           /** Play the audio on load */
+          interact: true,           /** Pass false to disable clicks on the waveform */
+          dragToSeek: false,           /** Allow to drag the cursor to seek to a new position */
+          hideScrollbar: false,           /** Hide the scrollbar */
+          audioRate: 1,           /** Audio rate */
+          autoScroll: true,           /** Automatically scroll the container to keep the current position in viewport */
+          autoCenter: true,           /** If autoScroll is enabled, keep the cursor in the center of the waveform during playback */
+          sampleRate: 8000,           /** Decoding sample rate. Doesn't affect the playback. Defaults to 8000 */
+        }
+    </script>
+
+    <h1 id="top">mshoxxDB version 1 - Demo Page</h1>
+    For demonstration purposes, the following listening examples are in MP3 format, VBR quality level 4 (~160 kbps).
+    <br><br>
+    Jump to songs: &nbsp;&nbsp;
+    <a href="#beneath">Beneath (8)</a>&nbsp;&nbsp;&nbsp;
+    <a href="#elevation">Elevation Imminent (16)</a>&nbsp;&nbsp;&nbsp;
+    <a href="#everything">Everything is a Game (5)</a>&nbsp;&nbsp;&nbsp;
+    <a href="#soulmate">The Soulmate (Inst) (16)</a>&nbsp;&nbsp;&nbsp;
+    <a href="#uridium">Uridium 2 (13)</a>&nbsp;&nbsp;&nbsp;
+    <a href="#wombat">Wombat Combat (20)</a>
+
+
+
+    <div class="distancer"></div>
+    <hr noshade>    
+    <div class="distancer"></div>
+
+
+
+    <h2 id="beneath">Beneath (8)</h2>
+    Genre: Chillout | Tempo: 84 | Time signature: 4/4
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mixture</div>
+      <div id="beneath_mixture" class="waveform"></div>
+      <script>
+          const beneath1 = WaveSurfer.create({...options, container: '#beneath_mixture'});
+          beneath1.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Beneath_(8).mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Bass</div>
+      <div id="beneath_bass" class="waveform"></div>
+      <script>
+          const beneath2 = WaveSurfer.create({...options, container: '#beneath_bass'});
+          beneath2.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Beneath_(8)_bass.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 1</div>
+      <div id="beneath_mel1" class="waveform"></div>
+      <script>
+          const beneath3 = WaveSurfer.create({...options, container: '#beneath_mel1'});
+          beneath3.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Beneath_(8)_mel1.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Choir</div>
+      <div id="beneath_choir" class="waveform"></div>
+      <script>
+          const beneath4 = WaveSurfer.create({...options, container: '#beneath_choir'});
+          beneath4.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Beneath_(8)_choir.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Piano</div>
+      <div id="beneath_piano" class="waveform"></div>
+      <script>
+          const beneath5 = WaveSurfer.create({...options, container: '#beneath_piano'});
+          beneath5.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Beneath_(8)_piano.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Drums</div>
+      <div id="beneath_drums" class="waveform"></div>
+      <script>
+          const beneath6 = WaveSurfer.create({...options, container: '#beneath_drums'});
+          beneath6.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Beneath_(8)_drums.mp3');
+      </script>
+    </div>
+
+    <a href="#top">Back to Top</a>
+    
+
+
+    <div class="distancer"></div>
+    <hr noshade>
+    <div class="distancer"></div>
+
+
+
+    <h2 id="elevation">Elevation Imminent (16)</h2>
+    Genre: Game | Tempo: 95-140 | Time signature: 4/4
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mixture</div>
+      <div id="elevation_mixture" class="waveform"></div>
+      <script>
+          const elevation1 = WaveSurfer.create({...options, container: '#elevation_mixture'});
+          elevation1.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Elevation_Imminent_(16).mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Bassline</div>
+      <div id="elevation_bassline" class="waveform"></div>
+      <script>
+          const elevation2 = WaveSurfer.create({...options, container: '#elevation_bassline'});
+          elevation2.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Elevation_Imminent_(16)_bassline.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 1</div>
+      <div id="elevation_mel1" class="waveform"></div>
+      <script>
+          const elevation3 = WaveSurfer.create({...options, container: '#elevation_mel1'});
+          elevation3.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Elevation_Imminent_(16)_mel1.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 2</div>
+      <div id="elevation_mel2" class="waveform"></div>
+      <script>
+          const elevation4 = WaveSurfer.create({...options, container: '#elevation_mel2'});
+          elevation4.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Elevation_Imminent_(16)_mel2.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 3</div>
+      <div id="elevation_mel3" class="waveform"></div>
+      <script>
+          const elevation5 = WaveSurfer.create({...options, container: '#elevation_mel3'});
+          elevation5.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Elevation_Imminent_(16)_mel3.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Piano</div>
+      <div id="elevation_piano" class="waveform"></div>
+      <script>
+          const elevation6 = WaveSurfer.create({...options, container: '#elevation_piano'});
+          elevation6.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Elevation_Imminent_(16)_piano.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Drums</div>
+      <div id="elevation_drums" class="waveform"></div>
+      <script>
+          const elevation7 = WaveSurfer.create({...options, container: '#elevation_drums'});
+          elevation7.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Elevation_Imminent_(16)_drums.mp3');
+      </script>
+    </div>
+
+    <a href="#top">Back to Top</a>
+    
+
+
+    <div class="distancer"></div>
+    <hr noshade>
+    <div class="distancer"></div>
+
+
+
+    <h2 id="everything">Everything is a Game (5)</h2>
+    Genre: 8-Bit, Game | Tempo: 217 | Time signature: 4/4
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mixture</div>
+      <div id="everything_mixture" class="waveform"></div>
+      <script>
+          const everything1 = WaveSurfer.create({...options, container: '#everything_mixture'});
+          everything1.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Everything_is_a_Game_(5).mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Bass</div>
+      <div id="everything_bass" class="waveform"></div>
+      <script>
+          const everything2 = WaveSurfer.create({...options, container: '#everything_bass'});
+          everything2.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Everything_is_a_Game_(5)_bass.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 1</div>
+      <div id="everything_mel1" class="waveform"></div>
+      <script>
+          const everything3 = WaveSurfer.create({...options, container: '#everything_mel1'});
+          everything3.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Everything_is_a_Game_(5)_mel1.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 2</div>
+      <div id="everything_mel2" class="waveform"></div>
+      <script>
+          const everything4 = WaveSurfer.create({...options, container: '#everything_mel2'});
+          everything4.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Everything_is_a_Game_(5)_mel2.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Strings</div>
+      <div id="everything_strings" class="waveform"></div>
+      <script>
+          const everything5 = WaveSurfer.create({...options, container: '#everything_strings'});
+          everything5.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Everything_is_a_Game_(5)_strings.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Drums</div>
+      <div id="everything_drums" class="waveform"></div>
+      <script>
+          const everything6 = WaveSurfer.create({...options, container: '#everything_drums'});
+          everything6.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Everything_is_a_Game_(5)_drums.mp3');
+      </script>
+    </div>
+    
+    <a href="#top">Back to Top</a>
+
+
+    
+    <div class="distancer"></div>
+    <hr noshade>
+    <div class="distancer"></div>
+    
+    
+
+    <h2 id="soulmate">The Soulmate (Inst) (16)</h2>
+    Genre: Pop, EDM | Tempo: 142 | Time signature: 4/4
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mixture</div>
+      <div id="soulmate_mixture" class="waveform"></div>
+      <script>
+          const soulmate1 = WaveSurfer.create({...options, container: '#soulmate_mixture'});
+          soulmate1.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/The_Soulmate_(Inst)_(16).mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Bassline 1</div>
+      <div id="soulmate_bassline1" class="waveform"></div>
+      <script>
+          const soulmate2 = WaveSurfer.create({...options, container: '#soulmate_bassline1'});
+          soulmate2.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/The_Soulmate_(Inst)_(16)_bassline1.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Bassline 2</div>
+      <div id="soulmate_bassline2" class="waveform"></div>
+      <script>
+          const soulmate3 = WaveSurfer.create({...options, container: '#soulmate_bassline2'});
+          soulmate3.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/The_Soulmate_(Inst)_(16)_bassline2.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 1</div>
+      <div id="soulmate_mel1" class="waveform"></div>
+      <script>
+          const soulmate4 = WaveSurfer.create({...options, container: '#soulmate_mel1'});
+          soulmate4.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/The_Soulmate_(Inst)_(16)_mel1.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 2</div>
+      <div id="soulmate_mel2" class="waveform"></div>
+      <script>
+          const soulmate5 = WaveSurfer.create({...options, container: '#soulmate_mel2'});
+          soulmate5.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/The_Soulmate_(Inst)_(16)_mel2.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Piano</div>
+      <div id="soulmate_piano" class="waveform"></div>
+      <script>
+          const soulmate6 = WaveSurfer.create({...options, container: '#soulmate_piano'});
+          soulmate6.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/The_Soulmate_(Inst)_(16)_piano.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Strings</div>
+      <div id="soulmate_strings" class="waveform"></div>
+      <script>
+          const soulmate7 = WaveSurfer.create({...options, container: '#soulmate_strings'});
+          soulmate7.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/The_Soulmate_(Inst)_(16)_strings.mp3');
+      </script>
+    </div>
+
+    <a href="#top">Back to Top</a>
+    
+
+
+    <div class="distancer"></div>
+    <hr noshade>
+    <div class="distancer"></div>
+    
+    
+
+    <h2 id="uridium">Uridium 2 (13)</h2>
+    Genre: House, EDM | Tempo: 129 | Time signature: 4/4
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mixture</div>
+      <div id="uridium_mixture" class="waveform"></div>
+      <script>
+          const uridium1 = WaveSurfer.create({...options, container: '#uridium_mixture'});
+          uridium1.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Uridium_2_(13).mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Bassline</div>
+      <div id="uridium_bassline" class="waveform"></div>
+      <script>
+          const uridium2 = WaveSurfer.create({...options, container: '#uridium_bassline'});
+          uridium2.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Uridium_2_(13)_bassline.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 1</div>
+      <div id="uridium_mel1" class="waveform"></div>
+      <script>
+          const uridium3 = WaveSurfer.create({...options, container: '#uridium_mel1'});
+          uridium3.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Uridium_2_(13)_mel1.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 2</div>
+      <div id="uridium_mel2" class="waveform"></div>
+      <script>
+          const uridium4 = WaveSurfer.create({...options, container: '#uridium_mel2'});
+          uridium4.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Uridium_2_(13)_mel2.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 3</div>
+      <div id="uridium_mel3" class="waveform"></div>
+      <script>
+          const uridium5 = WaveSurfer.create({...options, container: '#uridium_mel3'});
+          uridium5.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Uridium_2_(13)_mel3.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 4</div>
+      <div id="uridium_mel4" class="waveform"></div>
+      <script>
+          const uridium6 = WaveSurfer.create({...options, container: '#uridium_mel4'});
+          uridium6.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Uridium_2_(13)_mel4.mp3');
+      </script>
+    </div>
+    
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mel 8-Bit</div>
+      <div id="uridium_mel8bit" class="waveform"></div>
+      <script>
+          const uridium7 = WaveSurfer.create({...options, container: '#uridium_mel8bit'});
+          uridium7.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Uridium_2_(13)_mel8bit.mp3');
+      </script>
+    </div>
+    
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Organ</div>
+      <div id="uridium_organ" class="waveform"></div>
+      <script>
+          const uridium8 = WaveSurfer.create({...options, container: '#uridium_organ'});
+          uridium8.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Uridium_2_(13)_organ.mp3');
+      </script>
+    </div>
+    
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Piano</div>
+      <div id="uridium_piano" class="waveform"></div>
+      <script>
+          const uridium9 = WaveSurfer.create({...options, container: '#uridium_piano'});
+          uridium9.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Uridium_2_(13)_piano.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Drums</div>
+      <div id="uridium_drums" class="waveform"></div>
+      <script>
+          const uridium10 = WaveSurfer.create({...options, container: '#uridium_drums'});
+          uridium10.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Uridium_2_(13)_drums.mp3');
+      </script>
+    </div>
+
+    <a href="#top">Back to Top</a>
+
+
+
+    <div class="distancer"></div>
+    <hr noshade>
+    <div class="distancer"></div>
+    
+    
+
+    <h2 id="wombat">Wombat Combat (20)</h2>
+    Genre: Game | Tempo: 135 | Time signature: 4/4
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Mixture</div>
+      <div id="wombat_mixture" class="waveform"></div>
+      <script>
+          const wombat1 = WaveSurfer.create({...options, container: '#wombat_mixture'});
+          wombat1.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Wombat_Combat_(20).mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Bass 1</div>
+      <div id="wombat_bass1" class="waveform"></div>
+      <script>
+          const wombat2 = WaveSurfer.create({...options, container: '#wombat_bass1'});
+          wombat2.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Wombat_Combat_(20)_bass1.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Bass 2</div>
+      <div id="wombat_bass2" class="waveform"></div>
+      <script>
+          const wombat3 = WaveSurfer.create({...options, container: '#wombat_bass2'});
+          wombat3.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Wombat_Combat_(20)_bass2.mp3');
+      </script>
+    </div>
+    
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Strings 1</div>
+      <div id="wombat_strings1" class="waveform"></div>
+      <script>
+          const wombat4 = WaveSurfer.create({...options, container: '#wombat_strings1'});
+          wombat4.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Wombat_Combat_(20)_strings1.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Strings 2</div>
+      <div id="wombat_strings2" class="waveform"></div>
+      <script>
+          const wombat5 = WaveSurfer.create({...options, container: '#wombat_strings2'});
+          wombat5.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Wombat_Combat_(20)_strings2.mp3');
+      </script>
+    </div>
+
+    <div id="generalcontainer"> 
+      <div id="title" class="audioheader">Drums</div>
+      <div id="wombat_drums" class="waveform"></div>
+      <script>
+          const wombat6 = WaveSurfer.create({...options, container: '#wombat_drums'});
+          wombat6.load('https://cdn.jsdelivr.net/gh/mic-tae/mshoxxdb_test/Wombat_Combat_(20)_drums.mp3');
+      </script>
+    </div>
+
+    <a href="#top">Back to Top</a>
+
+    <div class="distancer"></div>
+
+</body>
+</html>
