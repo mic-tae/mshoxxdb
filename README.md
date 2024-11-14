@@ -10,6 +10,9 @@ Contains:
 - track-wise MIDI files
 - CSV metadata with genre, tempo, time signature, and artist information
 
+### Demo Page
+For a few listening examples, please visit this repo's github page at **https://mic-tae.github.io/mshoxxdb/**.
+
 ### License
 All contents distributed under Creative Commons BY-NC-SA 4.0.
 
