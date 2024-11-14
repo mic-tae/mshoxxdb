@@ -1,0 +1,30 @@
+body {
+  margin-top:20px;
+  margin-left:20px;
+}
+
+.audioheader {
+	width:10%;
+	float:left;
+	text-align:center;
+	margin-top:40px;
+}
+
+.waveform {
+	width:80%;
+	display:inline-block;
+}
+
+.distancer {
+  margin-top:50px;
+}
+
+#generalcontainer {
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+#generalcontainer:hover {
+	background-color:#f0f0f0;
+}
+
