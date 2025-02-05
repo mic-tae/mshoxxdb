@@ -32,9 +32,9 @@ Should you use this dataset in your work, please cite it the following way (bibt
 ```
 @misc {taenzer:mshoxxDB:2024,
   author    = {Taenzer, Michael},
-  title     = {mshoxxDB - a Versioned Dataset for Electronic Music},
+  title     = {{mshoxxDB - a Versioned Dataset for Electronic Music}},
   booktitle = {{Late-Breaking and Demo Session of the 25th International Conference on Music Information Retrieval (ISMIR)}},
-  address   = {San Francisco, CA, USA},
+  address   = {{San Francisco, CA, USA}},
   year      = {2024},
 }
 ```
