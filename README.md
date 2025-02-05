@@ -29,6 +29,7 @@ For a few listening examples, please visit this repo's github page at **https://
 
 ### Citation
 Should you use this dataset in your work, please cite it the following way (bibtex):
+```
 @misc {taenzer:mshoxxDB:2024,
   author    = {Taenzer, Michael},
   title     = {mshoxxDB - a Versioned Dataset for Electronic Music},
@@ -36,6 +37,7 @@ Should you use this dataset in your work, please cite it the following way (bibt
   address   = {San Francisco, CA, USA},
   year      = {2024},
 }
+```
 
 ### Upcoming changes
 - make dataset available in Stereo
