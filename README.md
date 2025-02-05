@@ -37,4 +37,6 @@ Should you use this dataset in your work, please cite it the following way (bibt
 ```
 
 ### Upcoming changes
-- make dataset available in Stereo
+- 1.1: include dataset splits sets ```ms12``` and ```ms14```
+- 1.1: change all file version numbers simply to v1 (as this is the first release)
+- 1.1/2.0: make dataset available in Stereo
