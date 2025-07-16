@@ -2,7 +2,7 @@
 This dataset was presented as a [Late Breaking Demo at ISMIR 2024](https://ismir2024program.ismir.net/lbd_423.html) in San Francisco, CA, including the [paper](https://ismir2024program.ismir.net/lbd_423.html#lbd) (as an extended abstract), [poster](https://ismir2024program.ismir.net/lbd_423.html#poster), and [demo video](https://ismir2024program.ismir.net/lbd_423.html#video).
 
 ### Description
-Version 1 of mshoxxDB consists of 18 full-length pieces of music in the genre of Electronic Music, totaling 61 minutes of audio.
+Version 1.1 of mshoxxDB consists of 18 full-length pieces of music in the genre of Electronic Music, totaling 61 minutes of audio.
 The dataset spans a number of subgenres of Electronic Music: Video Game, 8-Bit (Chiptune), EDM, Pop, House, Chillout/Dreamy.  
 The dataset is suitable for a variety of tasks in the field of Music Information Retrieval (MIR), such as Source Separation, Multi-Pitch Estimation, Beat Detection, Tempo Estimation.
 It is particularly interesting for instrument-agnostic methods and evaluations of model generalization due to wide variety of synthetic and traditional timbres.
@@ -19,7 +19,7 @@ Not all mixtures are exact sums of their respective multi-tracks. The mixtures m
 All contents are distributed under Creative Commons BY-NC-SA 4.0.
 
 ### Access & Download
-mshoxxDB can be downloaded from **https://doi.org/10.5281/zenodo.13284495**.
+mshoxxDB can be downloaded from **https://doi.org/10.5281/zenodo.13284494**.
 
 ### Demo Page
 For a few listening examples, please visit this repo's github page at **https://mic-tae.github.io/mshoxxdb/**.
@@ -36,7 +36,11 @@ Should you use this dataset in your work, please cite it the following way (bibt
 }
 ```
 
+### Changes in Version 1.1
+This version was released on 16 July 2025.
+- changes all file version numbers simply to v1 (as this is the first release)
+- includes dataset splits sets ```ms12``` and ```ms14```
+- adds README and LICENSE files
+
 ### Upcoming changes
-- 1.1: include dataset splits sets ```ms12``` and ```ms14```
-- 1.1: change all file version numbers simply to v1 (as this is the first release)
-- 1.1/2.0: make dataset available in Stereo
+- 2.0: (maybe) make dataset available in Stereo
