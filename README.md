@@ -9,7 +9,7 @@ This dataset was presented as a [Late Breaking Demo at ISMIR 2024](https://ismir
 
 ### Content Overview
 - 18 full-length pieces of music, 61 minutes of audio in total
-- mixtures and multi-tracks in FLAC format (44.1 kHz, 16-Bit, Mono, compression level 6)
+- mixtures and multi-tracks in FLAC format (44.1 kHz, 16 bit, mono, compression level 6)
 - track-wise MIDI files
 - CSV metadata with genre, tempo, time signature, and artist information
 - ```ms12``` and ```ms14``` dataset splits, as described in the initial study (see above)
@@ -36,7 +36,7 @@ Should you use this dataset in your work, please cite it the following way (bibt
 }
 ```
 
-### Changes in Version 1.1 (16 July 2025)
+### Changes in Version 1.1
 - changes all previous file version numbers simply to "v1" for consistency
 - includes dataset splits sets ```ms12``` and ```ms14``` (as .json)
 - adds README and LICENSE files
