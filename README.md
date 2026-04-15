@@ -1,12 +1,12 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15881577.svg)](https://doi.org/10.5281/zenodo.15881577)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19599752.svg)](https://doi.org/10.5281/zenodo.19599752)
 
 ### mshoxxDB - a Versioned Dataset for Electronic Music
-This dataset was presented as a [Late Breaking Demo at ISMIR 2024](https://ismir2024program.ismir.net/lbd_423.html) in San Francisco, CA, including the [paper](https://ismir2024program.ismir.net/lbd_423.html#lbd) (as an extended abstract), [poster](https://ismir2024program.ismir.net/lbd_423.html#poster), and [demo video](https://ismir2024program.ismir.net/lbd_423.html#video). It was initially studied in [this EURASIP article](https://asmp-eurasipjournals.springeropen.com/articles/10.1186/s13636-025-00398-2).  
+This dataset was presented as a [Late Breaking Demo at ISMIR 2024](https://ismir2024program.ismir.net/lbd_423.html) in San Francisco, CA, including the [paper](https://ismir2024program.ismir.net/lbd_423.html#lbd) (as an extended abstract), [poster](https://ismir2024program.ismir.net/lbd_423.html#poster), and [demo video](https://ismir2024program.ismir.net/lbd_423.html#video). It was initially studied in [this EURASIP article](https://asmp-eurasipjournals.springeropen.com/articles/10.1186/s13636-025-00398-2). More details available on Zenodo.
 
 ### Description
-- mshoxxDB consists of 18 full-length pieces of music, 61 minutes of audio in total  
+- mshoxxDB consists of 18 full-length pieces of Electronic Music, 61 minutes of audio in total  
 - covers subgenres: Video Game, 8-Bit (Chiptune), EDM, Pop, House, Chillout/Dreamy styles  
-- supports tasks in the field of Music Information Retrieval (MIR) such as source separation, multi-pitch estimation, beat detection, tempo estimation  
+- supports tasks in Music Information Retrieval (MIR) such as instrument detection, source separation, multi-pitch estimation, beat detection, tempo estimation  
 - particularly well suited for instrument-agnostic methods and model generalization evaluations due to diverse synthetic and traditional timbres  
 - created by Michael Taenzer in Reason Studios DAW  
 
@@ -14,12 +14,11 @@ This dataset was presented as a [Late Breaking Demo at ISMIR 2024](https://ismir
 - 18 full-length pieces of music, 61 minutes of audio in total  
 - mixtures and multitrack stems in FLAC format (44.1 kHz, 16-bit, mono, compression level 6)  
 - track-level MIDI files  
-- CSV metadata including genre, tempo, time signature, and artist information  
+- CSV metadata including, among others: genres, tempo (bpm), time signature, original composer and artist information  
 - ```ms12``` and ```ms14``` dataset splits in JSON format, as described in the initial study (see above)  
 
 ### Technical Notes
-Not all mixtures are exact sums of their respective multi-tracks. Some mixtures may contain additional processing in the form of limiters and compression, e.g. applied to the full mix or through side-chain compression between tracks.
-No harmonic effects were added onto the mixtures, such as reverb, echo, or delay, as these would introduce additional harmonic content, resulting in mismatches between MIDI and audio.  
+Not all mixtures are exact sums of their respective multi-tracks. Some mixtures may contain additional processing in the form of limiters and compression, e.g. applied to the full mix or through side-chain compression between tracks. No harmonic effects were added onto the mixtures, such as reverb, echo, or delay, as these would introduce additional harmonic content and could result in mismatches between MIDI and audio.  
 
 ### License
 All contents are distributed under Creative Commons BY-NC-SA 4.0.
@@ -28,27 +27,29 @@ All contents are distributed under Creative Commons BY-NC-SA 4.0.
 mshoxxDB can be downloaded from **https://doi.org/10.5281/zenodo.13284494**. Zenodo hosts the canonical archived release of mshoxxDB.  
 For a few listening examples, please visit this repo's GitHub Pages at **https://mic-tae.github.io/mshoxxdb/**.
 
-### Citation
-Should you use this dataset in your work, please cite it as follows (bibtex):
-```
-@misc {taenzer:mshoxxDB:2024,
-  author    = {Taenzer, Michael},
-  title     = {{mshoxxDB - a Versioned Dataset for Electronic Music}},
-  booktitle = {{Late-Breaking and Demo Session of the 25th International Conference on Music Information Retrieval (ISMIR)}},
-  address   = {{San Francisco, CA, USA}},
-  year      = {2024},
-}
-```
 ### Future versions
 Future versions of mshoxxDB may include additional music, segmentation annotations for each piece, and possibly stereo audio data.  
 
 ### Community
 Contributions to this dataset are welcome in all forms, e.g. by adding new music, annotations, or other suggestions that could help improve mshoxxDB.  
 
-### Changes in Version 1.1
-- changes all previous file version numbers simply to "v1" for consistency  
-- adds ```ms12``` and ```ms14``` dataset splits (JSON files)  
-- adds a LICENSE file, and a README file  
+### Changelog
+Version 1.2 (15 April 2026)  
+- added "metadata.csv" back into the archive  
+- substantially restructured "metadata.csv":  
+  - new columns: "piece_id", "artist", "bpm_min", "bpm_max"  
+  - renamed columns: "genre" -> "genres", "length" -> "duration_seconds", "timesig" -> "time_signature"  
+  - dropped column: "tempo"  
+- json files now use "piece_id" instead of filenames as identifier  
+- changed all remaining umlauts "ü" -> "ue"  
+- substantially extended this README file  
+  
+Version 1.1 (16 July 2025)  
+- renamed all files to reflect main DB version number v1  
+- changed umlaut "ü" from "Güte" -> "Guete"  
+- added dataset splits "ms12" (1 json) and "ms14" (3 jsons) as described and used [here](https://doi.org/10.1186/s13636-025-00398-2)  
+- added LICENSE file  
+- added README file  
 
-### Known Issues in Version 1.1
-- typo in folder name "Güte_des_Geschicks_v1": Umlaut "ü" should be "ue" (as referenced in the .json files)  
+Version 1 (14 November 2024)  
+- Initial release  
