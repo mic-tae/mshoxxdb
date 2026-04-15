@@ -1,7 +1,7 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19599752.svg)](https://doi.org/10.5281/zenodo.19599752)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13284494.svg)](https://doi.org/10.5281/zenodo.13284494)
 
 ### mshoxxDB - a Versioned Dataset for Electronic Music
-This dataset was presented as a [Late Breaking Demo at ISMIR 2024](https://ismir2024program.ismir.net/lbd_423.html) in San Francisco, CA, including the [paper](https://ismir2024program.ismir.net/lbd_423.html#lbd) (as an extended abstract), [poster](https://ismir2024program.ismir.net/lbd_423.html#poster), and [demo video](https://ismir2024program.ismir.net/lbd_423.html#video). It was initially studied in [this EURASIP article](https://asmp-eurasipjournals.springeropen.com/articles/10.1186/s13636-025-00398-2). More details available on Zenodo.
+This dataset was presented as a [Late Breaking Demo at ISMIR 2024](https://ismir2024program.ismir.net/lbd_423.html) in San Francisco, CA, including the [paper](https://ismir2024program.ismir.net/lbd_423.html#lbd) (as an extended abstract), [poster](https://ismir2024program.ismir.net/lbd_423.html#poster), and [demo video](https://ismir2024program.ismir.net/lbd_423.html#video). It was initially studied in [this EURASIP article](https://asmp-eurasipjournals.springeropen.com/articles/10.1186/s13636-025-00398-2). More details (Methodology, Getting Started, etc.) available in the archive on Zenodo.
 
 ### Description
 - mshoxxDB consists of 18 full-length pieces of Electronic Music, 61 minutes of audio in total  
