@@ -34,4 +34,4 @@ Future versions of mshoxxDB may include additional music, segmentation annotatio
 Contributions to this dataset are welcome in all forms, e.g. by adding new music, annotations, or other suggestions that could help improve mshoxxDB.  
 
 ### Changelog
--> see [changelog.md](https://github.com/mic-tae/mshoxxdb/blob/main/changelog.md)
+-> see [changelog.md](https://github.com/mic-tae/mshoxxdb/blob/main/CHANGELOG.md)
